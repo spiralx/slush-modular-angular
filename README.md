@@ -1,4 +1,4 @@
-# slush-coffeescript
+# slush-modular-angular
 
 [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Dev. Dependency Status][daviddm-dev-image]][daviddm-dev-url]
 
@@ -7,10 +7,10 @@
 
 ### Installing
 
-Install `slush-coffeescript` globally:
+Install `slush-modular-angular` globally:
 
 ```bash
-$ npm install -g slush-coffeescript
+$ npm install -g slush-modular-angular
 ```
 
 
@@ -19,20 +19,17 @@ $ npm install -g slush-coffeescript
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-coffeescript
+$ mkdir my-slush-modular-angular
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-coffeescript && slush coffeescript
+$ cd my-slush-modular-angular && slush modular-angular
 ```
 
 and answer the proceeding questions.
 
-* _Add bin script for CLI?_
-
-  Answering __yes__ to this question generates an executable script (by default in the `bin` directory) to be run from the command line, which calls a module `cli` to handle processing command-line arguments and running the application.
 
 * _Compile CoffeeScript to JS?_
 
@@ -61,51 +58,9 @@ Basic CoffeeScript module designed to be directly used as a library - compilatio
   "author_email": "spiralx@gmail.com",
   "user_name": "spiralx",
   "license": "MIT",
-  "bin": false,
   "compiled": false,
   "source_dir": "lib",
   "test_dir": "test"
-}
-```
-
-
-__slush-config-cli.json__
-
-A CoffeeScript module that can be run from the command-line and typically installed globally.
-
-```js
-{
-  "app_name": "my-node-command",
-  "app_description": "My CoffeeScript CLI module",
-  "bin": true
-}
-```
-
-
-__slush-config-compiled.json__
-
-A JavaScript module built from CoffeeScript source using the included `gulp` build script.
-
-```js
-{
-  "app_name": "my-compiled-node-lib",
-  "app_description": "My CoffeeScript module",
-  "compiled": true,
-  "source_dir": "coffee",
-  "build_dir": "lib",
-  "test_dir": "test"
-}
-```
-
-
-__slush-config-both.json__
-
-A module with a CLI script, written in CoffeeScript and compiled to JavaScript.
-
-```js
-{
-  "bin": true,
-  "compiled": true
 }
 ```
 
@@ -121,12 +76,12 @@ To find out more about Slush, check out the [documentation](https://github.com/k
 
 ### Contributing
 
-See the [CONTRIBUTING Guidelines](https://github.com/spiralx/slush-coffeescript/blob/master/CONTRIBUTING.md)
+See the [CONTRIBUTING Guidelines](https://github.com/spiralx/slush-modular-angular/blob/master/CONTRIBUTING.md)
 
 
 ### Support
 
-If you have any problem or suggestion please open an issue [here](https://github.com/spiralx/slush-coffeescript/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/spiralx/slush-modular-angular/issues).
 
 
 ### License
@@ -156,9 +111,9 @@ If you have any problem or suggestion please open an issue [here](https://github
 > FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 > OTHER DEALINGS IN THE SOFTWARE.
 
-[npm-url]: https://npmjs.org/package/slush-coffeescript
-[npm-image]: https://badge.fury.io/js/slush-coffeescript.svg
-[daviddm-url]: https://david-dm.org/spiralx/slush-coffeescript
-[daviddm-image]: https://david-dm.org/spiralx/slush-coffeescript.svg?theme=shields.io
-[daviddm-dev-url]: https://david-dm.org/spiralx/slush-coffeescript#info=devDependencies
-[daviddm-dev-image]: https://david-dm.org/spiralx/slush-coffeescript/dev-status.svg?theme=shields.io
+[npm-url]: https://npmjs.org/package/slush-modular-angular
+[npm-image]: https://badge.fury.io/js/slush-modular-angular.svg
+[daviddm-url]: https://david-dm.org/spiralx/slush-modular-angular
+[daviddm-image]: https://david-dm.org/spiralx/slush-modular-angular.svg?theme=shields.io
+[daviddm-dev-url]: https://david-dm.org/spiralx/slush-modular-angular#info=devDependencies
+[daviddm-dev-image]: https://david-dm.org/spiralx/slush-modular-angular/dev-status.svg?theme=shields.io
