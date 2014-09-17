@@ -1,0 +1,12 @@
+{
+  "app_name": "my-angular-application",
+  "app_description": "My AngularJS application",
+  "app_version": "0.1.0",
+  "author_name": "James Skinner",
+  "author_email": "spiralx@gmail.com",
+  "user_name": "spiralx",
+  "license": "MIT",
+  "compiled": false,
+  "source_dir": "lib",
+  "test_dir": "test"
+}
